@@ -3,7 +3,7 @@ module github.com/N4r35h/wfiber
 go 1.21.1
 
 require (
-	github.com/N4r35h/gos2tsi v0.0.0-20240531015829-51d6118937e1
+	github.com/N4r35h/gos2tsi v0.0.0-20241003162622-bc2bd63937d8
 	github.com/gofiber/fiber/v2 v2.52.5
 	github.com/sirupsen/logrus v1.9.3
 )

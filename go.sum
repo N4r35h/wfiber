@@ -1,5 +1,7 @@
 github.com/N4r35h/gos2tsi v0.0.0-20240531015829-51d6118937e1 h1:ePlVYmPTT5tO9ghM9Wzrm6VKmIwp7ur5VO96qzNXqW0=
 github.com/N4r35h/gos2tsi v0.0.0-20240531015829-51d6118937e1/go.mod h1:VrxxxG/+SplN43B9o4v4xevSMODbd6semJ/5pHdJlv0=
+github.com/N4r35h/gos2tsi v0.0.0-20241003162622-bc2bd63937d8 h1:/pOJ7av/ymUAZU7xKXPNPUQ6E8PJqP0b44jrRpLSaQU=
+github.com/N4r35h/gos2tsi v0.0.0-20241003162622-bc2bd63937d8/go.mod h1:VrxxxG/+SplN43B9o4v4xevSMODbd6semJ/5pHdJlv0=
 github.com/andybalholm/brotli v1.0.5 h1:8uQZIdzKmjc/iuPu7O2ioW48L81FgatrcpfFmiq/cCs=
 github.com/andybalholm/brotli v1.0.5/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

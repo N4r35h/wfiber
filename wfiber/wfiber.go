@@ -194,7 +194,7 @@ func (a *App) GetAPIHelperFuncString(r *Route, apiPrefix string) string {
 	toRet += ")"
 	if r.OPStruct.Name != "" {
 		toRet += ": Promise<" + getStructNameAfterGenericsPopulation(r.OPStruct)
-		if r.OPStruct.IsSlice {
+		for i := 0; i < r.OPStruct.IsSlice; i++ {
 			toRet += "[]"
 		}
 		toRet += ">"
@@ -240,7 +240,7 @@ func getStructNameAfterGenericsPopulation(ps gos2tsi.ParsedStruct) string {
 				toRet += " "
 			}
 			toRet += v.TSType
-			if v.IsSlice {
+			for i := 0; i < v.IsSlice; i++ {
 				toRet += "[]"
 			}
 		}
