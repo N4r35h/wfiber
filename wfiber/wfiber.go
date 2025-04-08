@@ -308,7 +308,6 @@ func (a *Router) Delete(prefix string, ip interface{}, op interface{}, handlers 
 func GetFunctionNameOfRoute(r *Route, apiPrefix string) string {
 	toRet := strings.Title(strings.ToLower(r.Method))
 	r.Path = strings.ReplaceAll(r.Path, apiPrefix, "")
-	//nameSeg := strings.ReplaceAll(r.Path, ":", "By")
 	for _, v := range strings.Split(r.Path, "/") {
 		OpenAngularBrackets := strings.Index(v, "<")
 		ClosingAngularBrackets := strings.Index(v, ">")
@@ -321,6 +320,7 @@ func GetFunctionNameOfRoute(r *Route, apiPrefix string) string {
 		v = strings.Title(v)
 		v = strings.ReplaceAll(v, ":", "By")
 		v = strings.ReplaceAll(v, "?", "")
+		v = strings.ReplaceAll(v, "-", "_") // Add hyphen replacement
 		toRet += strings.ReplaceAll(v, ">", "")
 	}
 	return toRet
