@@ -149,13 +149,20 @@ func (a *App) GenerateTSFile() TSAPIClientData {
 				}
 				if f.Var.Embedded() {
 					for _, f := range a.Codegen.Structs[f.Var.Pkg().Path()+"."+f.TSName].Fields {
-						if segment != "" {
-							segment += " | "
+						if f.TSName != "" {
+							if segment != "" {
+								segment += " | "
+							}
+							segment += "'" + f.TSName + "'"
 						}
-						segment += "'" + f.TSName + "'"
 					}
 				} else {
-					segment += "'" + f.TSName + "'"
+					if f.TSName != "" {
+						segment += "'" + f.TSName + "'"
+					}
+				}
+				if strings.ReplaceAll(strings.ReplaceAll(segment, "|", ""), "'", "") == "" {
+					continue
 				}
 				fileGeneratedContent += segment
 			}
