@@ -185,7 +185,11 @@ func (a *App) GetAPIHelperFuncString(r *Route, apiPrefix string) string {
 		toRet += ": " + p.TSType + ", "
 	}
 	if r.IPStruct.Name != "" {
-		toRet += "_ip: " + r.IPStruct.Name + ", "
+		toRet += "_ip: " + r.IPStruct.Name
+		for i := 0; i < r.IPStruct.IsSlice; i++ {
+			toRet += "[]"
+		}
+		toRet += ", "
 	}
 	toRet += "query?: string"
 	if r.Method == "GET" && len(r.OPStruct.GenericPopulations) > 0 {
