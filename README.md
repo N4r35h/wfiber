@@ -48,6 +48,26 @@ Then run code generation:
 - Explicitly via `app.CodeGen()`
 - Or automatically when calling `app.Listen(...)`
 
+## Quick demo setup
+
+Use the ready-made demo in `examples/demo`:
+
+```bash
+go run ./examples/demo/backend
+```
+
+Then in another terminal:
+
+```bash
+cd examples/demo/frontend
+npm install
+npm run typecheck
+```
+
+For the full backend-shape-change -> frontend type-error walkthrough, see:
+
+- `examples/demo/README.md`
+
 ## Example: generated TypeScript SDK
 
 From `wfiber/frontend_test/src/api/api.gen.ts`:
