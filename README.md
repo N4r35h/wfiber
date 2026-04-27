@@ -1,11 +1,14 @@
 # WFiber
-
-<video src="https://raw.githubusercontent.com/N4r35h/wfiber/refs/heads/main/examples/demo/wFiberDemoProjectShowCase.webm" controls muted playsinline width="100%"></video>
-(not loading ? view the showcase video on youtube @ [https://youtu.be/lji_UkhNAs0](https://youtu.be/lji_UkhNAs0))
-
 WFiber (**W**rapped **Fiber**) is a thin wrapper over [gofiber](https://github.com/gofiber/fiber) focused on code generation.
-
 Its main goal is to make your Go backend structs the source of truth and generate a typed TypeScript SDK for frontend API calls.
+
+
+
+https://github.com/user-attachments/assets/6766c626-cafa-4ce8-b6fa-35798d319ac1
+
+
+
+(not loading ? view the showcase video on youtube @ [https://youtu.be/lji_UkhNAs0](https://youtu.be/lji_UkhNAs0))
 
 ## Why wfiber
 
